@@ -22,8 +22,9 @@ public:
 		int black_pixel = 0;	
 		int mid_img = img.width/2;
 		//ball chase
-    for (int i = 0; i < img.height * img.step; i++) {
-				if (img.data[i] == white_pixel) {						
+    for (int n = 0; n < img.height * img.width; n++) {
+				int i = n*3;
+				if (img.data[i] == white_pixel && img.data[i+1] == white_pixel && img.data[i+2] == white_pixel) {						
 						int c = i/img.step;
 						int r = (i-(c*img.step))/3;
 						if (r <= (mid_img-(mid_img*0.2))){
@@ -58,7 +59,6 @@ public:
 				srv_.request.linear_x = srv_.request.linear_x;
 				srv_.request.angular_z = srv_.request.angular_z;
 		}
-  
     
 		// Call the safe_move service and pass the requested joint angles
     if (!client_.call(srv_))
