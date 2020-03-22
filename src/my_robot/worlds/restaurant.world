@@ -1277,7 +1277,7 @@
           <pose frame=''>0 0 0 0 0 0</pose>
           <geometry>
             <box>
-              <size>2.2 1.5 1.1</size>
+              <size>2.2 1.5 0.9</size>
             </box>
           </geometry>
           <surface>
@@ -1379,7 +1379,7 @@
           <pose frame=''>0 0 0 0 0 0</pose>
           <geometry>
             <box>
-              <size>2.2 1.5 1.1</size>
+              <size>2.2 1.5 0.9</size>
             </box>
           </geometry>
           <surface>
@@ -1482,7 +1482,7 @@
           <pose frame=''>0 0 0 0 0 0</pose>
           <geometry>
             <box>
-              <size>2.2 1.5 1.1</size>
+              <size>2.2 1.5 0.9</size>
             </box>
           </geometry>
           <surface>
@@ -1585,7 +1585,7 @@
           <pose frame=''>0 0 0 0 0 0</pose>
           <geometry>
             <box>
-              <size>2.2 1.5 1.1</size>
+              <size>2.2 1.5 0.9</size>
             </box>
           </geometry>
           <surface>
@@ -1688,7 +1688,7 @@
           <pose frame=''>0 0 0 0 0 0</pose>
           <geometry>
             <box>
-              <size>2.2 1.5 1.1</size>
+              <size>2.2 1.5 0.9</size>
             </box>
           </geometry>
           <surface>
@@ -1791,7 +1791,7 @@
           <pose frame=''>0 0 0 0 0 0</pose>
           <geometry>
             <box>
-              <size>2.2 1.5 1.1</size>
+              <size>2.2 1.5 0.9</size>
             </box>
           </geometry>
           <surface>
@@ -1894,7 +1894,7 @@
           <pose frame=''>0 0 0 0 0 0</pose>
           <geometry>
             <box>
-              <size>2.2 1.5 1.1</size>
+              <size>2.2 1.5 0.9</size>
             </box>
           </geometry>
           <surface>
@@ -1997,7 +1997,7 @@
           <pose frame=''>0 0 0 0 0 0</pose>
           <geometry>
             <box>
-              <size>2.2 1.5 1.1</size>
+              <size>2.2 1.5 0.9</size>
             </box>
           </geometry>
           <surface>
@@ -2100,7 +2100,7 @@
           <pose frame=''>0 0 0 0 0 0</pose>
           <geometry>
             <box>
-              <size>2.2 1.5 1.1</size>
+              <size>2.2 1.5 0.9</size>
             </box>
           </geometry>
           <surface>
@@ -2203,7 +2203,7 @@
           <pose frame=''>0 0 0 0 0 0</pose>
           <geometry>
             <box>
-              <size>2.2 1.5 1.1</size>
+              <size>2.2 1.5 0.9</size>
             </box>
           </geometry>
           <surface>
@@ -2306,7 +2306,7 @@
           <pose frame=''>0 0 0 0 0 0</pose>
           <geometry>
             <box>
-              <size>2.2 1.5 1.1</size>
+              <size>2.2 1.5 0.9</size>
             </box>
           </geometry>
           <surface>
@@ -2409,7 +2409,7 @@
           <pose frame=''>0 0 0 0 0 0</pose>
           <geometry>
             <box>
-              <size>2.2 1.5 1.1</size>
+              <size>2.2 1.5 0.9</size>
             </box>
           </geometry>
           <surface>
@@ -2512,7 +2512,7 @@
           <pose frame=''>0 0 0 0 0 0</pose>
           <geometry>
             <box>
-              <size>2.2 1.5 1.1</size>
+              <size>2.2 1.5 0.9</size>
             </box>
           </geometry>
           <surface>
@@ -2615,7 +2615,7 @@
           <pose frame=''>0 0 0 0 0 0</pose>
           <geometry>
             <box>
-              <size>2.2 1.5 1.1</size>
+              <size>2.2 1.5 0.9</size>
             </box>
           </geometry>
           <surface>
@@ -2718,7 +2718,7 @@
           <pose frame=''>0 0 0 0 0 0</pose>
           <geometry>
             <box>
-              <size>2.2 1.5 1.1</size>
+              <size>2.2 1.5 0.9</size>
             </box>
           </geometry>
           <surface>
@@ -2821,7 +2821,7 @@
           <pose frame=''>0 0 0 0 0 0</pose>
           <geometry>
             <box>
-              <size>2.2 1.5 1.1</size>
+              <size>2.2 1.5 0.9</size>
             </box>
           </geometry>
           <surface>
@@ -2924,7 +2924,7 @@
           <pose frame=''>0 0 0 0 0 0</pose>
           <geometry>
             <box>
-              <size>2.2 1.5 1.1</size>
+              <size>2.2 1.5 0.9</size>
             </box>
           </geometry>
           <surface>
@@ -3027,7 +3027,7 @@
           <pose frame=''>0 0 0 0 0 0</pose>
           <geometry>
             <box>
-              <size>2.2 1.5 1.1</size>
+              <size>2.2 1.5 0.9</size>
             </box>
           </geometry>
           <surface>
@@ -3130,7 +3130,7 @@
           <pose frame=''>0 0 0 0 0 0</pose>
           <geometry>
             <box>
-              <size>2.2 1.5 1.1</size>
+              <size>2.2 1.5 0.9</size>
             </box>
           </geometry>
           <surface>
@@ -3233,7 +3233,7 @@
           <pose frame=''>0 0 0 0 0 0</pose>
           <geometry>
             <box>
-              <size>2.2 1.5 1.1</size>
+              <size>2.2 1.5 0.9</size>
             </box>
           </geometry>
           <surface>
@@ -3291,7 +3291,7 @@
       <link name='Wall_18'>
         <pose frame=''>-12.5035 0.003409 0 0 0 1.5708</pose>
         <inertial>
-          <mass>1</mass>
+          <mass>100</mass>
           <pose frame=''>0 0 0 0 0 0</pose>
           <inertia>
             <ixx>1</ixx>
@@ -4223,7 +4223,7 @@
           <pose frame=''>0 0 0 0 0 0</pose>
           <geometry>
             <box>
-              <size>2.2 1.5 1.1</size>
+              <size>2.2 1.5 0.9</size>
             </box>
           </geometry>
           <surface>
@@ -4326,7 +4326,7 @@
           <pose frame=''>0 0 0 0 0 0</pose>
           <geometry>
             <box>
-              <size>2.2 1.5 1.1</size>
+              <size>2.2 1.5 0.9</size>
             </box>
           </geometry>
           <surface>
@@ -4429,7 +4429,7 @@
           <pose frame=''>0 0 0 0 0 0</pose>
           <geometry>
             <box>
-              <size>2.2 1.5 1.1</size>
+              <size>2.2 1.5 0.9</size>
             </box>
           </geometry>
           <surface>
@@ -4532,7 +4532,7 @@
           <pose frame=''>0 0 0 0 0 0</pose>
           <geometry>
             <box>
-              <size>2.2 1.5 1.1</size>
+              <size>2.2 1.5 0.9</size>
             </box>
           </geometry>
           <surface>
@@ -4635,7 +4635,7 @@
           <pose frame=''>0 0 0 0 0 0</pose>
           <geometry>
             <box>
-              <size>2.2 1.5 1.1</size>
+              <size>2.2 1.5 0.9</size>
             </box>
           </geometry>
           <surface>
@@ -4738,7 +4738,7 @@
           <pose frame=''>0 0 0 0 0 0</pose>
           <geometry>
             <box>
-              <size>2.2 1.5 1.1</size>
+              <size>2.2 1.5 0.9</size>
             </box>
           </geometry>
           <surface>
@@ -4841,7 +4841,7 @@
           <pose frame=''>0 0 0 0 0 0</pose>
           <geometry>
             <box>
-              <size>2.2 1.5 1.1</size>
+              <size>2.2 1.5 0.9</size>
             </box>
           </geometry>
           <surface>
@@ -4944,7 +4944,7 @@
           <pose frame=''>0 0 0 0 0 0</pose>
           <geometry>
             <box>
-              <size>2.2 1.5 1.1</size>
+              <size>2.2 1.5 0.9</size>
             </box>
           </geometry>
           <surface>
@@ -5047,7 +5047,7 @@
           <pose frame=''>0 0 0 0 0 0</pose>
           <geometry>
             <box>
-              <size>2.2 1.5 1.1</size>
+              <size>2.2 1.5 0.9</size>
             </box>
           </geometry>
           <surface>
@@ -5150,7 +5150,7 @@
           <pose frame=''>0 0 0 0 0 0</pose>
           <geometry>
             <box>
-              <size>2.2 1.5 1.1</size>
+              <size>2.2 1.5 0.9</size>
             </box>
           </geometry>
           <surface>
@@ -5253,7 +5253,7 @@
           <pose frame=''>0 0 0 0 0 0</pose>
           <geometry>
             <box>
-              <size>2.2 1.5 1.1</size>
+              <size>2.2 1.5 0.9</size>
             </box>
           </geometry>
           <surface>
@@ -5356,7 +5356,7 @@
           <pose frame=''>0 0 0 0 0 0</pose>
           <geometry>
             <box>
-              <size>2.2 1.5 1.1</size>
+              <size>2.2 1.5 0.9</size>
             </box>
           </geometry>
           <surface>
@@ -5459,7 +5459,7 @@
           <pose frame=''>0 0 0 0 0 0</pose>
           <geometry>
             <box>
-              <size>2.2 1.5 1.1</size>
+              <size>2.2 1.5 0.9</size>
             </box>
           </geometry>
           <surface>
@@ -5562,7 +5562,7 @@
           <pose frame=''>0 0 0 0 0 0</pose>
           <geometry>
             <box>
-              <size>2.2 1.5 1.1</size>
+              <size>2.2 1.5 0.9</size>
             </box>
           </geometry>
           <surface>
@@ -5665,7 +5665,7 @@
           <pose frame=''>0 0 0 0 0 0</pose>
           <geometry>
             <box>
-              <size>2.2 1.5 1.1</size>
+              <size>2.2 1.5 0.9</size>
             </box>
           </geometry>
           <surface>
@@ -5768,7 +5768,7 @@
           <pose frame=''>0 0 0 0 0 0</pose>
           <geometry>
             <box>
-              <size>2.2 1.5 1.1</size>
+              <size>2.2 1.5 0.9</size>
             </box>
           </geometry>
           <surface>
@@ -5871,7 +5871,7 @@
           <pose frame=''>0 0 0 0 0 0</pose>
           <geometry>
             <box>
-              <size>2.2 1.5 1.1</size>
+              <size>2.2 1.5 0.9</size>
             </box>
           </geometry>
           <surface>
@@ -5974,7 +5974,7 @@
           <pose frame=''>0 0 0 0 0 0</pose>
           <geometry>
             <box>
-              <size>2.2 1.5 1.1</size>
+              <size>2.2 1.5 0.9</size>
             </box>
           </geometry>
           <surface>
@@ -6077,7 +6077,7 @@
           <pose frame=''>0 0 0 0 0 0</pose>
           <geometry>
             <box>
-              <size>2.2 1.5 1.1</size>
+              <size>2.2 1.5 0.9</size>
             </box>
           </geometry>
           <surface>
@@ -6180,7 +6180,7 @@
           <pose frame=''>0 0 0 0 0 0</pose>
           <geometry>
             <box>
-              <size>2.2 1.5 1.1</size>
+              <size>2.2 1.5 0.9</size>
             </box>
           </geometry>
           <surface>
@@ -6283,7 +6283,7 @@
           <pose frame=''>0 0 0 0 0 0</pose>
           <geometry>
             <box>
-              <size>2.2 1.5 1.1</size>
+              <size>2.2 1.5 0.9</size>
             </box>
           </geometry>
           <surface>
