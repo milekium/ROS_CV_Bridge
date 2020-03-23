@@ -6,7 +6,7 @@
       <commandTopic>cmd_vel</commandTopic>
       <odometryTopic>odom</odometryTopic>
       <odometryFrame>odom</odometryFrame>
-      <odometryRate>20.0</odometryRate>
+      <odometryRate>30.0</odometryRate>
       <robotBaseFrame>robot_footprint</robotBaseFrame>
     </plugin>
   </gazebo>
@@ -39,7 +39,7 @@
   <!-- camera -->
   <gazebo reference="camera">
     <sensor type="camera" name="camera1">
-      <update_rate>1.0</update_rate>
+      <update_rate>10.0</update_rate>
       <camera name="head">
         <horizontal_fov>1.3962634</horizontal_fov>
         <image>
