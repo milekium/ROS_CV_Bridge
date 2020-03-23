@@ -31,7 +31,7 @@
     <visual name='chassis_visual'>
       <origin xyz="0 0 0" rpy=" 0 0 0"/>
       <geometry>
-        <box size=".4 .2 .1"/>
+        <box size=".6 .2 .1"/>
       </geometry>
     </visual>
     <collision name='chassis_top_collision'>
@@ -179,7 +179,7 @@
 
 	<!-- sensors -->
   <joint type="fixed" name="camera_joint">
-    <origin xyz="0.225 0 0" rpy="0 0 0"/>
+    <origin xyz="0.325 0 0" rpy="0 0 0"/>
     <child link="camera"/>
     <parent link="chassis"/>
     <axis xyz="0 1 0" rpy="0 0 0"/>
