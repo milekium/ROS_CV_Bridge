@@ -1,6 +1,6 @@
 <?xml version='1.0'?>
 
-<robot name="my_robot" xmlns:xacro="http://www.ros.org/wiki/xacro">
+<robot name="my_robot" xmlns:xacro="http://ros.org/wiki/xacro">
 
 	<xacro:include filename="$(find my_robot)/urdf/my_robot.gazebo"/>
 
@@ -25,38 +25,48 @@
     <collision name='chassis_collision'>
       <origin xyz="0 0 0" rpy=" 0 0 0"/> 
       <geometry>
-        <box size=".4 .2 .1"/>
+        <box size="0.6 0.2 0.04"/>
       </geometry>
     </collision>
     <visual name='chassis_visual'>
       <origin xyz="0 0 0" rpy=" 0 0 0"/>
       <geometry>
-        <box size=".6 .2 .1"/>
+        <box size="0.6 0.2 0.04"/>
       </geometry>
     </visual>
     <collision name='chassis_top_collision'>
-      <origin xyz="0 0 0.075" rpy=" 0 0 0"/> 
+      <origin xyz="0 0 0.065" rpy=" 0 0 0"/> 
       <geometry>
-        <box size=".05 .05 .05"/>
+        <box size="0.25 0.05 0.09"/>
       </geometry>
     </collision>
     <visual name='chassis_top_visual'>
-      <origin xyz="0 0 0.075" rpy=" 0 0 0"/>
+      <origin xyz="0 0 0.065" rpy=" 0 0 0"/>
       <geometry>
-        <box size=".05 .05 .05"/>
+        <box size="0.25 0.05 0.09"/>
       </geometry>
     </visual>
   </link>
 
 	<!-- wheels -->
   <joint type="continuous" name="left_front_wheel_hinge">
-    <origin xyz="0.15 0.15 0" rpy="0 0 0"/>
+    <origin xyz="0.15 0.16 0" rpy="0 0 0"/>
     <child link="left_front_wheel"/>
     <parent link="chassis"/>
     <axis xyz="0 1 0" rpy="0 0 0"/>
     <limit effort="10000" velocity="1000"/>
     <dynamics damping="1.0" friction="1.0"/>
   </joint>
+  <transmission name="left_front_wheel_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="left_front_wheel_hinge">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+		</joint>
+    <actuator name="left_front_wheel_actuator">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+      </actuator>
+  </transmission>
 	<link name='left_front_wheel'>
     <collision name='left_front_wheel_collision'>
       <origin xyz="0 0 0" rpy=" 0 1.5707 1.5707"/>
@@ -67,7 +77,7 @@
     <visual name='left_front_wheel_visual'>
       <origin xyz="0 -0.02 0" rpy=" 0 1.5707 0"/>
       <geometry>
-				<mesh filename="package://my_robot/meshes/mecanum0.stl" scale="1 1 1"/>
+				<mesh filename="package://my_robot/meshes/mecanum.dae" scale="1 1 1"/>
       </geometry>
     </visual>
     <inertial>
@@ -82,13 +92,23 @@
 	</link>
 
   <joint type="continuous" name="right_front_wheel_hinge">
-    <origin xyz="0.15 -0.15 0" rpy="0 0 0"/>
+    <origin xyz="0.15 -0.16 0" rpy="0 0 0"/>
     <child link="right_front_wheel"/>
     <parent link="chassis"/>
     <axis xyz="0 1 0" rpy="0 0 0"/>
     <limit effort="10000" velocity="1000"/>
     <dynamics damping="1.0" friction="1.0"/>
   </joint>
+  <transmission name="right_front_wheel_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="right_front_wheel_hinge">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+		</joint>
+    <actuator name="right_front_wheel_actuator">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+      </actuator>
+  </transmission>
 	<link name='right_front_wheel'>
     <collision name='right_front_wheel_collision'>
       <origin xyz="0 0 0" rpy=" 0 1.5707 1.5707"/>
@@ -114,13 +134,23 @@
 	</link>
 
   <joint type="continuous" name="left_back_wheel_hinge">
-    <origin xyz="-0.15 0.15 0" rpy="0 0 0"/>
+    <origin xyz="-0.15 0.16 0" rpy="0 0 0"/>
     <child link="left_back_wheel"/>
     <parent link="chassis"/>
     <axis xyz="0 1 0" rpy="0 0 0"/>
     <limit effort="10000" velocity="1000"/>
     <dynamics damping="1.0" friction="1.0"/>
   </joint>
+  <transmission name="left_back_wheel_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="left_back_wheel_hinge">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+		</joint>
+    <actuator name="left_back_wheel_actuator">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+      </actuator>
+  </transmission>
 	<link name='left_back_wheel'>
     <collision name='left_back_wheel_collision'>
       <origin xyz="0 0 0" rpy=" 0 1.5707 1.5707"/>
@@ -146,13 +176,23 @@
 	</link>
 
   <joint type="continuous" name="right_back_wheel_hinge">
-    <origin xyz="-0.15 -0.15 0" rpy="0 0 0"/>
+    <origin xyz="-0.15 -0.16 0" rpy="0 0 0"/>
     <child link="right_back_wheel"/>
     <parent link="chassis"/>
     <axis xyz="0 1 0" rpy="0 0 0"/>
     <limit effort="10000" velocity="1000"/>
     <dynamics damping="1.0" friction="1.0"/>
   </joint>
+  <transmission name="right_back_wheel_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="right_back_wheel_hinge">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+		</joint>
+    <actuator name="right_back_wheel_actuator">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+      </actuator>
+  </transmission>
 	<link name='right_back_wheel'>
     <collision name='right_back_wheel_collision'>
       <origin xyz="0 0 0" rpy=" 0 1.5707 1.5707"/>
@@ -167,7 +207,7 @@
       </geometry>
     </visual>
     <inertial>
-      <mass value="5.0"/>
+      <mass value="10.0"/>
       <origin xyz="0.0 0 0" rpy=" 0 0 0"/>
       <inertia
           ixx="0.1" ixy="0" ixz="0"
@@ -177,9 +217,9 @@
     </inertial>
 	</link>
 
-	<!-- sensors -->
+	<!-- RGBD CAMERA SENSOR -->
   <joint type="fixed" name="camera_joint">
-    <origin xyz="0.325 0 0" rpy="0 0 0"/>
+    <origin xyz="0.275 0.0 0.045" rpy="0 0 0"/>
     <child link="camera"/>
     <parent link="chassis"/>
     <axis xyz="0 1 0" rpy="0 0 0"/>
@@ -208,8 +248,39 @@
     </inertial>
 	</link>	
 
+  <joint name="camera_optical_joint" type="fixed">
+    <origin xyz="0 0 0" rpy="-1.5707 0 -1.5707"/>
+    <parent link="camera"/>
+    <child link="camera_optical"/>
+    <axis xyz="0 0 0" rpy="0 0 0"/>
+  </joint>
+  <link name="camera_optical">
+    <collision name='camera_optical_collision'>
+      <origin xyz="0 0 0" rpy=" 0 0 0"/>
+      <geometry>
+        <box size="0.05 0.05 0.05"/>
+      </geometry>
+    </collision>
+    <visual name='camera_optical_visual'>
+      <origin xyz="0 0 0" rpy=" 0 0 0"/>
+      <geometry>
+        <box size="0.05 0.05 0.05"/>
+      </geometry>
+    </visual>
+    <inertial>
+      <mass value="0.1"/>
+      <origin xyz="0.0 0 0" rpy=" 0 0 0"/>
+      <inertia
+          ixx="1e-6" ixy="0" ixz="0"
+          iyy="0.000001" iyz="0"
+          izz="0.000001"
+      />
+    </inertial>
+  </link>
+
+	<!-- LASER SENSOR -->
   <joint type="fixed" name="hokuyo_joint">
-    <origin xyz="-0.26 0 0.205" rpy="0 0 0"/>
+    <origin xyz="0.275 0 -0.055" rpy="0 0 0"/>
     <child link="hokuyo"/>
     <parent link="chassis"/>
     <axis xyz="0 1 0" rpy="0 0 0"/>
@@ -222,7 +293,7 @@
       </geometry>
     </collision>
     <visual name='hokuyo_visual'>
-      <origin xyz="0 0 0" rpy=" 0 0 0"/>
+      <origin xyz="0 0 0" rpy=" 3.14159 0 0"/>
       <geometry>
 				<mesh filename="package://my_robot/meshes/hokuyo.dae" />
       </geometry>
@@ -240,7 +311,7 @@
 
 	<!-- plate -->
   <joint type="fixed" name="plate_hinge">
-    <origin xyz="0 0 0.11" rpy="0 0 0"/>
+    <origin xyz="0 0 0.12" rpy="0 0 0"/>
     <child link="plate"/>
     <parent link="chassis"/>
     <axis xyz="0 1 0" rpy="0 0 0"/>
@@ -267,17 +338,5 @@
           izz="0.1"
       />
     </inertial>
-    <collision name='plate_top_collision'>
-      <origin xyz="-0.26 0 0.035" rpy=" 0 0 0"/> 
-      <geometry>
-        <box size=".07 .07 .05"/>
-      </geometry>
-    </collision>
-    <visual name='plate_top_visual'>
-      <origin xyz="-0.26 0 0.035" rpy=" 0 0 0"/>
-      <geometry>
-        <box size=".07 .07 .05"/>
-      </geometry>
-    </visual>
 	</link>
 </robot>

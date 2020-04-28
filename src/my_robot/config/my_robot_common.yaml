@@ -1,0 +1,19 @@
+joint_state_controller:
+  type: joint_state_controller/JointStateController
+  publish_rate: 100   
+leftFrontWheel_effort_controller:
+  type: effort_controllers/JointVelocityController
+  joint: left_front_wheel_hinge
+  pid: {p: 100.0, i: 0.1, d: 10.0}
+leftBackWheel_effort_controller:
+  type: effort_controllers/JointVelocityController
+  joint: left_back_wheel_hinge
+  pid: {p: 100.0, i: 0.1, d: 10.0}
+rightFrontWheel_effort_controller:
+  type: effort_controllers/JointVelocityController
+  joint: right_front_wheel_hinge
+  pid: {p: 100.0, i: 0.1, d: 10.0}
+rightBackWheel_effort_controller:
+  type: effort_controllers/JointVelocityController
+  joint: right_back_wheel_hinge
+  pid: {p: 100.0, i: 0.1, d: 10.0}

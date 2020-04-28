@@ -3,14 +3,14 @@
 <launch>
 
   <!-- Robot pose -->
-  <arg name="x" default="-12.127604"/>
-  <arg name="y" default="-3.284102"/>
-  <arg name="z" default="1.1"/>
+  <arg name="x" default="-11.5"/>
+  <arg name="y" default="-7.5"/>
+  <arg name="z" default="1.0"/>
   <arg name="roll" default="0"/>
   <arg name="pitch" default="0"/>
   <arg name="yaw" default="0"/>
 
-  <!-- Launch other relevant files-->
+  <!-- Launch other relevant files--> 
   <include file="$(find my_robot)/launch/robot_description.launch"/>
 
   <!-- World File -->
@@ -32,4 +32,25 @@
         args="-urdf -param robot_description -model my_robot 
               -x $(arg x) -y $(arg y) -z $(arg z)
               -R $(arg roll) -P $(arg pitch) -Y $(arg yaw)"/>
+
+  <!-- Controller parameters-->
+<!--  <rosparam file="$(find my_robot)/config/my_robot_common.yaml" command="load"/>-->
+<!--  <rosparam file="$(find my_robot)/config/my_robot_controller.yaml" command="load"/>-->
+
+  <!--  Load Controller-->
+<!--  <node name="base_controller_spawner"  pkg="controller_manager"  type="spawner"  output="screen" ns="/my_robot" args="mobile_base_controller" />-->
+<!--  <node name="joint_controllers_spawner" pkg="controller_manager" type="spawner" respawn="false" output="screen" args="joint_state_controller leftFrontWheel_effort_controller leftBackWheel_effort_controller rightFrontWheel_effort_controller  rightBackWheel_effort_controller"/>-->
+
+<!--  <node name="controller_manager_node"  pkg="diff_drive_mapping_robot" type="controller_manager_node"  output="screen" />-->
+<!--   Convert joint states to TF transforms -->
+<!--  <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" respawn="false" output="screen">-->
+<!--    <remap from="/joint_states" to="/joint_states" />-->
+<!--  </node>-->
+<!--  <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher">-->
+<!--    <param name="use_gui" value="false"/>-->
+<!--  </node>-->
+
+	<!--launch rviz-->
+<!--	<node name="rviz" pkg="rviz" type="rviz" respawn="false"/>-->
+	
 </launch>

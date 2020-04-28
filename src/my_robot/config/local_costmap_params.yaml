@@ -1,0 +1,15 @@
+local_costmap:
+   global_frame: odom
+   robot_base_frame: robot_footprint
+   update_frequency: 1
+   publish_frequency: 1
+   width: 5.0
+   height: 5.0
+   resolution: 0.01
+   static_map: true
+   rolling_window: true
+
+#inflation_layer:
+#   enabled: true
+#   inflate_unknown: false
+
