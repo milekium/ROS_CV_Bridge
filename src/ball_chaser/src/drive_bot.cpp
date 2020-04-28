@@ -11,7 +11,7 @@ ros::Publisher motor_command_publisher;
 bool handle_drive_request(ball_chaser::DriveToTarget::Request& req,
     ball_chaser::DriveToTarget::Response& res)
 {
-		//ROS_INFO("DriveToTargetRequest received - lx:%1.2f, ly:%1.2f, az:%1.2f", (float)req.linear_x, (float)req.linear_y, (float)req.angular_z);
+		ROS_INFO("DriveToTargetRequest received - lx:%1.2f, ly:%1.2f, az:%1.2f", (float)req.linear_x, (float)req.linear_y, (float)req.angular_z);
 
     // Create a motor_command object of type geometry_msgs::Twist
     geometry_msgs::Twist motor_command;

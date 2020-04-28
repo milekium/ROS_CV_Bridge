@@ -1,6 +1,5 @@
 <?xml version="1.0"?>
 <robot>
-
 	<gazebo>
     <plugin name="object_controller" filename="libgazebo_ros_planar_move.so">
       <commandTopic>cmd_vel</commandTopic>
